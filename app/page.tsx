@@ -3,8 +3,8 @@
 
 import React from 'react';
 import { Inter, Fira_Code } from 'next/font/google';
-import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMapMarkerAlt, FaGlobeAmericas, FaGraduationCap } from 'react-icons/fa';
-import { SiReact, SiTypescript, SiJavascript, SiPython, SiCplusplus, SiLinux, SiNextdotjs, SiGnubash } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMapMarkerAlt, FaGraduationCap } from 'react-icons/fa';
+import { SiReact, SiTypescript, SiJavascript, SiPython, SiCplusplus, SiLinux, SiNextdotjs } from 'react-icons/si';
 import AsciiBlackHole from './AsciiBlackHole';
 
 const inter = Inter({ subsets: ['latin'] });
