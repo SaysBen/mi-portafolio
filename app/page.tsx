@@ -6,6 +6,7 @@ import { Inter, Fira_Code } from 'next/font/google';
 import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMapMarkerAlt, FaGraduationCap } from 'react-icons/fa';
 import { SiReact, SiTypescript, SiJavascript, SiPython, SiCplusplus, SiLinux, SiNextdotjs } from 'react-icons/si';
 import AsciiBlackHole from './AsciiBlackHole';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 const firaCode = Fira_Code({ subsets: ['latin'] });
@@ -94,13 +95,14 @@ export default function Home() {
         <div className="text-center">
           <div className="w-32 h-32 mx-auto rounded-full bg-gray-700 mb-4 overflow-hidden border-4 border-gray-800">
              {/* Tu foto */}
-             <img src="/perfil.jpg" 
-              alt="Profile" className="w-full h-full object-cover object-top" />
-          </div>
-          <h1 className="text-xl font-bold leading-tight">{DATA.profile.name}</h1>
-          <p className={`text-sm text-gray-400 mt-2 ${firaCode.className}`}>{DATA.profile.role}</p>
-          <div className="flex items-center justify-center gap-2 mt-2 text-xs text-gray-500">
-            <FaMapMarkerAlt /> {DATA.profile.location}
+             <Image 
+             src="/perfil.jpg" 
+             alt="Profile" 
+              width={128}    /* El equivalente a w-32 */
+              height={128}   /* El equivalente a h-32 */
+             className="w-full h-full object-cover object-top" 
+             priority       /* Next.js que cargue esta imagen rápido*/
+            />
           </div>
         </div>
 
