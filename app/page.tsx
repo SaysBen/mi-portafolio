@@ -1,6 +1,5 @@
 'use client';
 
-
 import React from 'react';
 import { Inter, Fira_Code } from 'next/font/google';
 import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMapMarkerAlt, FaGraduationCap } from 'react-icons/fa';
@@ -33,7 +32,6 @@ const DATA = {
     { name: "React", icon: <SiReact /> },
     { name: "Next.js", icon: <SiNextdotjs /> },
   ],
-
   education: [
     {
       school: "Universidad Autónoma de San Luis Potosí (UASLP)",
@@ -42,7 +40,6 @@ const DATA = {
       desc: "Specialized in Computational Physics, Data Science, and High Performance Computing (HPC). Experienced in electronics, and software & hardware maintenance."
     }
   ],
-
   experience: [
     {
       company: "UASLP - Ellipsometry Laboratory",
@@ -93,16 +90,22 @@ export default function Home() {
         
         {/* Perfil */}
         <div className="text-center">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gray-700 mb-4 overflow-hidden border-4 border-gray-800">
-             {/* Tu foto */}
+          <div className="w-32 h-32 mx-auto rounded-full bg-gray-700 mb-4 overflow-hidden border-4 border-gray-800 relative">
              <Image 
-             src="/perfil.jpg" 
-             alt="Profile" 
-              width={128}    /* El equivalente a w-32 */
-              height={128}   /* El equivalente a h-32 */
-             className="w-full h-full object-cover object-top" 
-             priority       /* Next.js que cargue esta imagen rápido*/
+               src="/perfil.jpg" 
+               alt="Profile" 
+               width={128}    
+               height={128}   
+               className="w-full h-full object-cover object-top" 
+               priority       
             />
+          </div>
+          <h1 className="text-xl font-bold leading-tight mt-4">{DATA.profile.name}</h1>
+          <p className={`text-sm text-gray-400 mt-2 ${firaCode.className}`}>{DATA.profile.role}</p>
+          
+          {/* Aquí agregamos el icono de ubicación que te faltaba */}
+          <div className="flex items-center justify-center gap-2 mt-2 text-xs text-gray-500">
+            <FaMapMarkerAlt /> {DATA.profile.location}
           </div>
         </div>
 
@@ -153,13 +156,13 @@ export default function Home() {
           <p className="text-gray-600 leading-relaxed max-w-2xl">
             {DATA.profile.bio}
           </p>
+        </section>
 
         {/* Educación */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
             <FaGraduationCap /> Education
           </h2>
-          
           <div className="space-y-4">
             {DATA.education.map((edu, i) => (
               <div key={i} className="card bg-white flex flex-col md:flex-row gap-4 items-start md:items-center justify-between p-6">
@@ -220,10 +223,8 @@ export default function Home() {
           </div>
         </section>
 
-        </section>
-
-      {/*ANIMACIÓN*/}
-      <AsciiBlackHole/>
+        {/*ANIMACIÓN*/}
+        <AsciiBlackHole/>
 
       </main>
     </div>
