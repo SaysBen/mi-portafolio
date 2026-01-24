@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaMapMarkerAlt, Fa
 import { SiReact, SiTypescript, SiJavascript, SiPython, SiCplusplus, SiLinux, SiNextdotjs } from 'react-icons/si';
 import AsciiBlackHole from './AsciiBlackHole';
 import Image from 'next/image';
-import { BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react'; // Importación única al inicio
 
 const inter = Inter({ subsets: ['latin'] });
 const firaCode = Fira_Code({ subsets: ['latin'] });
@@ -88,8 +88,6 @@ export default function Home() {
       
       {/* --- SIDEBAR IZQUIERDA --- */}
       <aside className="bg-[#18181b] text-white p-8 flex flex-col gap-8 lg:h-screen lg:sticky lg:top-0 overflow-y-auto">
-        
-        {/* Perfil */}
         <div className="text-center">
           <div className="w-32 h-32 mx-auto rounded-full bg-gray-700 mb-4 overflow-hidden border-4 border-gray-800 relative">
              <Image 
@@ -103,21 +101,17 @@ export default function Home() {
           </div>
           <h1 className="text-xl font-bold leading-tight mt-4">{DATA.profile.name}</h1>
           <p className={`text-sm text-gray-400 mt-2 ${firaCode.className}`}>{DATA.profile.role}</p>
-          
-          {/* Aquí agregamos el icono de ubicación que te faltaba */}
           <div className="flex items-center justify-center gap-2 mt-2 text-xs text-gray-500">
             <FaMapMarkerAlt /> {DATA.profile.location}
           </div>
         </div>
 
-        {/* Social */}
         <div className="flex justify-center gap-4 text-xl text-gray-400">
           <a href={DATA.profile.social.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><FaGithub /></a>
           <a href={DATA.profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><FaLinkedin /></a>
           <a href={DATA.profile.social.email} className="hover:text-white transition"><FaEnvelope /></a>
         </div>
 
-        {/* Stack Tecnológico */}
         <div>
           <h3 className={`text-xs font-bold text-gray-500 uppercase tracking-widest mb-4 ${firaCode.className}`}>Tech Stack</h3>
           <div className="flex flex-wrap gap-2">
@@ -129,7 +123,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Idiomas */}
         <div>
           <h3 className={`text-xs font-bold text-gray-500 uppercase tracking-widest mb-4 ${firaCode.className}`}>Languages</h3>
           <ul className="space-y-2">
@@ -146,7 +139,6 @@ export default function Home() {
       {/* --- CONTENIDO PRINCIPAL --- */}
       <main className="p-6 lg:p-12 max-w-5xl mx-auto w-full">
         
-        {/* Header tipo Terminal */}
         <div className={`bg-gray-200 text-gray-600 px-4 py-2 rounded-lg mb-8 text-sm border border-gray-300 inline-block ${firaCode.className}`}>
           ~/adonay-benjamin/cv/readme.md <span className="animate-pulse">_</span>
         </div>
@@ -180,55 +172,40 @@ export default function Home() {
           </div>
         </section>
 
-      import { BookOpen } from 'lucide-react';
-
-{/* Scientific Publications */}
-<section className="mt-12 mb-10">
-  <div className="flex items-center gap-2 border-b-2 border-purple-600 pb-2 mb-6 text-slate-900 dark:text-white">
-    <BookOpen className="w-6 h-6 text-purple-600" />
-    <h2 className="text-2xl font-bold">
-      Scientific Publications
-    </h2>
-    </div>
-    <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden text-left">
-    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-purple-600 rounded-l-2xl"></div>
-    <div className="flex flex-col gap-4">
-      <span className="text-[10px] font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
-        Peer Reviewed Article
-      </span>
-      
-      <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-tight group-hover:text-purple-600 transition-colors">
-        Linear optical response of monolayer Sb₂Te₃ under uniaxial strain assessed by time-dependent density functional theory
-      </h3>
-
-      <div className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-        <p><span className="font-semibold text-slate-800 dark:text-slate-200">Journal:</span> 2D Materials (2026)</p>
-        <p><span className="font-semibold text-slate-800 dark:text-slate-200">DOI:</span> 10.1088/2053-1583/ae1848</p>
-      </div>
-
-      <div className="mt-2 bg-slate-50 dark:bg-slate-800/30 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
-        <p className="text-[10px] font-bold text-slate-500 uppercase mb-1 tracking-wide">Contribution</p>
-        <p className="text-sm text-slate-700 dark:text-slate-300">
-          Applied <span className="text-purple-600 dark:text-purple-400 font-semibold">TD-DFT</span> to analyze linear optical response under uniaxial strain.
-        </p>
-      </div>
-
-      <div className="mt-2 flex justify-end">
-        <a 
-          href="https://doi.org/10.1088/2053-1583/ae1848" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="group/btn flex items-center gap-2 text-purple-600 dark:text-purple-400 font-bold hover:underline text-sm transition-all"
-        >
-          Access Full Paper
-          <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+        {/* Scientific Publications */}
+        <section className="mb-12">
+          <div className="flex items-center gap-2 border-b-2 border-purple-600 pb-2 mb-6 text-slate-900 dark:text-white">
+            <BookOpen className="w-6 h-6 text-purple-600" />
+            <h2 className="text-2xl font-bold">Scientific Publications</h2>
+          </div>
+          <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden text-left">
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-purple-600 rounded-l-2xl"></div>
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
+                Peer Reviewed Article
+              </span>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-tight group-hover:text-purple-600 transition-colors">
+                Linear optical response of monolayer Sb₂Te₃ under uniaxial strain assessed by time-dependent density functional theory
+              </h3>
+              <div className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                <p><span className="font-semibold text-slate-800 dark:text-slate-200">Journal:</span> 2D Materials (2026)</p>
+                <p><span className="font-semibold text-slate-800 dark:text-slate-200">DOI:</span> 10.1088/2053-1583/ae1848</p>
+              </div>
+              <div className="mt-2 bg-slate-50 dark:bg-slate-800/30 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
+                <p className="text-[10px] font-bold text-slate-500 uppercase mb-1 tracking-wide">Contribution</p>
+                <p className="text-sm text-slate-700 dark:text-slate-300">
+                  Applied <span className="text-purple-600 dark:text-purple-400 font-semibold">TD-DFT</span> to analyze linear optical response under uniaxial strain.
+                </p>
+              </div>
+              <div className="mt-2 flex justify-end">
+                <a href="https://doi.org/10.1088/2053-1583/ae1848" target="_blank" rel="noopener noreferrer" className="group/btn flex items-center gap-2 text-purple-600 dark:text-purple-400 font-bold hover:underline text-sm transition-all">
+                  Access Full Paper
+                  <FaExternalLinkAlt className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Sección: Proyectos */}
         <section className="mb-12">
@@ -274,7 +251,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/*ANIMACIÓN*/}
         <AsciiBlackHole/>
 
       </main>
