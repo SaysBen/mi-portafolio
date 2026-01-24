@@ -16,7 +16,7 @@ const DATA = {
     name: "Adonay Benjamín Culebro García",
     role: "Physics Engineer | Data Science & HPC",
     location: "San Luis Potosí / Monterrey, México",
-    bio: "Physics Engineering intern specialized in Data Science, Parallel Computing, and Supercomputing. Skilled in Python, SQL, and Power BI for data analysis. Experienced in using SSH to access high-performance computing (HPC) clusters for numerical simulations and large-scale data analysis.",
+    bio: "Physics Engineering specialized in Data Science, Parallel Computing, and Supercomputing. Skilled in Python, SQL, and Power BI for data analysis. Experienced in using SSH to access high-performance computing (HPC) clusters for numerical simulations and large-scale data analysis.",
     social: {
       github: "https://github.com/SaysBen",
       linkedin: "https://linkedin.com/in/adonay-benjamin-culebro-garcia-6204ba358/",
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="text-center">
           <div className="w-32 h-32 mx-auto rounded-full bg-gray-700 mb-4 overflow-hidden border-4 border-gray-800 relative">
              <Image 
-               src="/perfil.jpg" 
+               src="/perf.jpg" 
                alt="Profile" 
                width={128}    
                height={128}   
