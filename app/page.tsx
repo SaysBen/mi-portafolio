@@ -179,9 +179,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Scientific Publications */}
-
-        <section className="mt-16 mb-12">
+{/* Scientific Publications */}
+<section className="mt-16 mb-12">
   <div className="flex items-center gap-4 mb-8">
     <h2 className="text-3xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight">
       Scientific Publications
@@ -189,16 +188,19 @@ export default function Home() {
     <div className="h-1 flex-grow bg-slate-200 dark:bg-slate-700 rounded-full"></div>
   </div>
 
-  <div className="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
-    {/* Decoración lateral para contraste */}
-    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-indigo-600 rounded-l-2xl"></div>
+  
+  <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+    
+    
+    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-600 rounded-l-2xl"></div>
 
     <div className="flex flex-col gap-4">
-      <span className="text-xs font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
-        Peer Reviewed Article
+      
+      <span className="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">
+        Scientific Publication
       </span>
       
-      <h3 className="text-2xl font-bold text-slate-900 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors">
+      <h3 className="text-2xl font-bold text-slate-900 dark:text-white leading-snug group-hover:text-blue-600 transition-colors">
         Linear optical response of monolayer Sb₂Te₃ under uniaxial strain assessed by time-dependent density functional theory
       </h3>
 
@@ -213,12 +215,12 @@ export default function Home() {
         </span>
       </div>
 
-      <div className="mt-4 bg-slate-50 dark:bg-slate-800/50 p-5 rounded-xl border border-slate-100 dark:border-slate-700/50">
+      <div className="mt-4 bg-slate-50 dark:bg-slate-800/30 p-5 rounded-xl border border-slate-100 dark:border-slate-700/50">
         <p className="text-sm font-semibold text-slate-500 dark:text-slate-500 uppercase mb-2 tracking-wide">
           Contribution & Methodology
         </p>
         <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-          Applied <span className="text-indigo-600 dark:text-indigo-400 font-semibold">TD-DFT</span> (Time-Dependent Density Functional Theory) to analyze and simulate the linear optical response under uniaxial strain, contributing to the understanding of 2D material optoelectronics.
+          Applied <span className="text-blue-600 dark:text-blue-400 font-semibold">TD-DFT</span> (Time-Dependent Density Functional Theory) to analyze and simulate the linear optical response under uniaxial strain.
         </p>
       </div>
 
@@ -227,7 +229,7 @@ export default function Home() {
           href="https://doi.org/10.1088/2053-1583/ae1848" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="group/btn flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-indigo-600 dark:hover:bg-indigo-400 hover:text-white transition-all transform hover:-translate-y-1"
+          className="group/btn flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white transition-all transform hover:-translate-y-1"
         >
           Access Full Paper
           <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
