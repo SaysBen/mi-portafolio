@@ -179,15 +179,20 @@ export default function Home() {
           </div>
         </section>
 
+      import { BookOpen } from 'lucide-react';
+
 {/* Scientific Publications */}
 <section className="mt-12 mb-10">
- 
-  <h2 className="text-2xl font-bold border-b-2 border-purple-600 pb-2 mb-6 text-slate-800 dark:text-white">
-    Scientific Publications
-  </h2>
-
   
-  <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+  <div className="flex items-center gap-2 border-b-2 border-purple-600 pb-2 mb-6">
+    <BookOpen className="w-6 h-6 text-purple-600" />
+    <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+      Scientific Publications
+    </h2>
+  </div>
+
+ 
+  <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden text-left">
     
     
     <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-purple-600 rounded-l-2xl"></div>
