@@ -179,57 +179,46 @@ export default function Home() {
           </div>
         </section>
 
-{/* Scientific Publications */}
-<section className="mt-16 mb-12">
-  <div className="flex items-center gap-4 mb-8">
-    <h2 className="text-3xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight">
-      Scientific Publications
-    </h2>
-    <div className="h-1 flex-grow bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-  </div>
+  {/* Scientific Publications */}
+<section className="mt-12 mb-10">
+  {/* Título con estilo idéntico a Education/Experience */}
+  <h2 className="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-6 text-slate-800 dark:text-white">
+    Scientific Publications
+  </h2>
 
-  
-  <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+  {/* Tarjeta con fondo sincronizado (#18181b) y bordes perfectos */}
+  <div className="group relative bg-white dark:bg-[#18181b] border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
     
-    
+    {/* Línea lateral azul con redondeado corregido (rounded-l-2xl) */}
     <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-600 rounded-l-2xl"></div>
 
     <div className="flex flex-col gap-4">
-      
-      <span className="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">
-        Scientific Publication
+      <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">
+      Peer Reviewed Article
       </span>
       
-      <h3 className="text-2xl font-bold text-slate-900 dark:text-white leading-snug group-hover:text-blue-600 transition-colors">
+      <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-tight group-hover:text-blue-600 transition-colors">
         Linear optical response of monolayer Sb₂Te₃ under uniaxial strain assessed by time-dependent density functional theory
       </h3>
 
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-slate-600 dark:text-slate-400 font-medium">
-        <span className="flex items-center gap-2">
-          <span className="text-slate-400">Journal:</span> 
-          <span className="text-slate-900 dark:text-slate-200 italic">2D Materials (2026)</span>
-        </span>
-        <span className="flex items-center gap-2">
-          <span className="text-slate-400">DOI:</span>
-          <span className="font-mono text-sm tracking-tighter">10.1088/2053-1583/ae1848</span>
-        </span>
+      <div className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+        <p><span className="font-semibold text-slate-800 dark:text-slate-200">Journal:</span> 2D Materials (2026)</p>
+        <p><span className="font-semibold text-slate-800 dark:text-slate-200">DOI:</span> 10.1088/2053-1583/ae1848</p>
       </div>
 
-      <div className="mt-4 bg-slate-50 dark:bg-slate-800/30 p-5 rounded-xl border border-slate-100 dark:border-slate-700/50">
-        <p className="text-sm font-semibold text-slate-500 dark:text-slate-500 uppercase mb-2 tracking-wide">
-          Contribution & Methodology
-        </p>
-        <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-          Applied <span className="text-blue-600 dark:text-blue-400 font-semibold">TD-DFT</span> (Time-Dependent Density Functional Theory) to analyze and simulate the linear optical response under uniaxial strain.
+      <div className="mt-2 bg-slate-50 dark:bg-slate-800/30 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
+        <p className="text-[10px] font-bold text-slate-500 uppercase mb-1 tracking-wide">Contribution</p>
+        <p className="text-sm text-slate-700 dark:text-slate-300">
+          Applied <span className="text-blue-600 dark:text-blue-400 font-semibold">TD-DFT</span> to analyze linear optical response under uniaxial strain.
         </p>
       </div>
 
-      <div className="mt-4 flex justify-end">
+      <div className="mt-2 flex justify-end">
         <a 
           href="https://doi.org/10.1088/2053-1583/ae1848" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="group/btn flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white transition-all transform hover:-translate-y-1"
+          className="group/btn flex items-center gap-2 text-blue-600 dark:text-blue-400 font-bold hover:underline text-sm transition-all"
         >
           Access Full Paper
           <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
