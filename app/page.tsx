@@ -179,6 +179,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Scientific Publications */}
+        <section className="mt-12">
+  <h2 className="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-6">
+    Scientific Publications
+  </h2>
+  
+  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+    <h3 className="text-xl font-semibold text-gray-900 dark:text-white leading-tight">
+      Linear optical response of monolayer Sb₂Te₃ under uniaxial strain assessed by time-dependent density functional theory
+    </h3>
+    <p className="mt-2 text-blue-600 dark:text-blue-400 font-medium">
+      Journal: <span className="italic">2D Materials (2026)</span>
+    </p>
+    
+    <div className="mt-4 text-gray-700 dark:text-gray-300">
+      <p className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-1">
+        Contribution:
+      </p>
+      <p>Applied <strong>TD-DFT</strong> to analyze linear optical response under uniaxial strain.</p>
+    </div>
+
+    <div className="mt-6">
+      <a 
+        href="https://doi.org/10.1088/2053-1583/ae1848" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
+      >
+        View Publication (DOI)
+        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
         {/* Sección: Proyectos */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
