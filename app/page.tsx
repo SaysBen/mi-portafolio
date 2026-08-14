@@ -73,6 +73,18 @@ const DATA = {
       desc: "Processed and visualized experimental results using Python to support theoretical conclusions.",
       tags: ["Python", "Matplotlib", "SQL"],
       link: "#"
+    },
+    {
+      title: "Sb₂Te₃ TDDFT Optical Response",
+      desc: "Quantum ESPRESSO & YAMBO inputs, processing scripts and figures behind a peer-reviewed paper (2D Materials, 2026). Applied TD-DFT to analyze linear optical response of strained monolayer Sb₂Te₃.",
+      tags: ["DFT", "TDDFT", "Quantum ESPRESSO", "YAMBO"],
+      link: "https://github.com/SaysBen/Sb2Te3-TDDFT-2DM"
+    },
+    {
+      title: "Waveguide Optical Property Prediction (DNN)",
+      desc: "Multi-output deep neural network (TensorFlow/Keras) that predicts effective index, extinction coefficient and loss of biosensor waveguides directly from wavelength and mode geometry.",
+      tags: ["Python", "TensorFlow", "Neural Networks", "Photonics"],
+      link: "https://github.com/SaysBen/waveguide-optical-nn-prediction"
     }
   ],
   languages: [
