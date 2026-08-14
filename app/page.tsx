@@ -64,15 +64,15 @@ const DATA = {
     },
     {
       title: "Nanostructures Analysis (LNS)",
-      desc: "Advanced analysis of Optical and Magnetic properties. Automated workflows to extract key metrics from simulation outputs using HPC.",
+      desc: "Parsed HPC-generated DFT band-structure outputs (Quantum ESPRESSO, run over SSH on the LNS cluster) into a tidy dataset with pandas, extracting band gap and Fermi level across strain steps.",
       tags: ["HPC", "SSH", "Pandas", "Data Sci"],
-      link: "#"
+      link: "https://github.com/SaysBen/sb2te3-strain-analysis"
     },
     {
       title: "Data Visualization & Automation",
-      desc: "Processed and visualized experimental results using Python to support theoretical conclusions.",
+      desc: "Automated pipeline that loads simulation results into SQLite and visualizes the strain-dependent band gap of Sb₂Te₃ with Matplotlib, supporting the paper's conclusions.",
       tags: ["Python", "Matplotlib", "SQL"],
-      link: "#"
+      link: "https://github.com/SaysBen/sb2te3-strain-analysis"
     },
     {
       title: "Sb₂Te₃ TDDFT Optical Response",
