@@ -81,9 +81,9 @@ const DATA = {
       link: "https://github.com/SaysBen/Sb2Te3-TDDFT-2DM"
     },
     {
-      title: "Waveguide Optical Property Prediction (DNN)",
-      desc: "Multi-output deep neural network (TensorFlow/Keras) that predicts effective index, extinction coefficient and loss of biosensor waveguides directly from wavelength and mode geometry.",
-      tags: ["Python", "TensorFlow", "Neural Networks", "Photonics"],
+      title: "Waveguide Optical Property Prediction (Collaborator)",
+      desc: "Collaborated on Oscar Pimentel's multi-output neural network for waveguide optical properties. Ran an independent NumPy-only ridge-regression test on the same dataset as a sanity check (R² > 0.97).",
+      tags: ["Python", "NumPy", "Collaboration", "Photonics"],
       link: "https://github.com/SaysBen/waveguide-optical-nn-prediction"
     }
   ],
