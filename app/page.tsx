@@ -66,13 +66,13 @@ const DATA = {
       title: "Nanostructures Analysis (LNS)",
       desc: "Parsed HPC-generated DFT band-structure outputs (Quantum ESPRESSO, run over SSH on the LNS cluster) into a tidy dataset with pandas, extracting band gap and Fermi level across strain steps.",
       tags: ["HPC", "SSH", "Pandas", "Data Sci"],
-      link: "https://github.com/SaysBen/sb2te3-strain-analysis"
+      link: "https://github.com/SaysBen/sb2te3-band-extraction"
     },
     {
       title: "Data Visualization & Automation",
       desc: "Automated pipeline that loads simulation results into SQLite and visualizes the strain-dependent band gap of Sb₂Te₃ with Matplotlib, supporting the paper's conclusions.",
       tags: ["Python", "Matplotlib", "SQL"],
-      link: "https://github.com/SaysBen/sb2te3-strain-analysis"
+      link: "https://github.com/SaysBen/sb2te3-bandgap-viz"
     },
     {
       title: "Sb₂Te₃ TDDFT Optical Response",
